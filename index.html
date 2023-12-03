@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The rebirth</title>
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
-    <header>
+    <div class="container"></div>
+    <header class="main-header clearfix">
       <h1>The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -17,22 +17,27 @@
         <a href="#">CSS Grid</a>
       </nav>
     </header>
-
     <article>
-      <header>
-
+      <header class="post-header">
         <h2>The Basic Language of Web: HTML</h2>
-        <img src="https://imgur.com/YNM0mkd.jpg" width="50" height="50" />
-        <p id="author">
+
+        <img
+          src="https://imgur.com/YNM0mkd.jpg"
+          width="50"
+          height="50"
+          class="author-img"
+        />
+        <p id="author" class="author">
           Posted by <strong>Akinde Samuel</strong> on Saturday, November 18th
           2023
         </p>
 
-        <img src="https://imgur.com/7w6q05z.jpg" width="200" height="200" />
+        <img src="https://imgur.com/7w6q05z.jpg" width="1500" height="250" />
+        <button>Like</button>
       </header>
 
       <p>
-        All morden websites and web applications were built using three
+        All mordern websites and web applications were built using three
         <em>fundamental</em> technologies: HTML, CSS and Javascript. These are
         the languages of the web
       </p>
@@ -54,7 +59,7 @@
       </p>
       <p>In HTML, each element is made up of 3 parts</p>
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -70,7 +75,9 @@
         web. Here are five of them:
       </p>
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To Hand-draft beautiful websites instead of relying on tools like
           worpress or wix
@@ -83,42 +90,34 @@
     </article>
 
     <aside>
-      <h4> Related posts</h4>
-      <ul>
-      <p>
-       <li>
-        <img src="https://imgur.com/16CoP6S.jpg" width="75" height="75" />
-        <a
-          href="#"
-          >How to learn Web development</a
-        >
-      </p>
-      <p>By Koenig Solution</p>
-    </li>
-    <li>
-      <p>
-        <img src="https://imgur.com/LrRc6gm.jpg" width="75" height="75" />
-        
-        <a href="#">
-          The Unknown power of CSS</a
-        >
-      </p>
-      <p>By Jim Dillion</p>
-    </li>
-    <li>
-      <p>
-        <img src="https://imgur.com/7w6q05z.jpg" width="75" height="75"/>
-        <a
-          href="#"
-          >Why Javascript is awesome</a
-        >
-      </p>
-      <p>By Maltida</p>
-    </li>
-    </ul>
+      <h4>Related posts</h4>
+      <ul class="related">
+        <li class="related-post">
+          <img src="https://imgur.com/16CoP6S.jpg" width="75" height="75" />
+          <div>
+            <a href="#" class="related-link">How to learn Web development</a>
+
+            <p class="related-author">By Koenig Solution</p>
+          </div>
+        </li>
+        <li class="related-post">
+          <img src="https://imgur.com/LrRc6gm.jpg" width="75" height="75" />
+          <div>
+            <a href="#" class="related-link"> The Unknown power of CSS</a>
+
+            <p class="related-author">By Jim Dillion</p>
+          </div>
+        </li>
+        <li class="related-post">
+          <img src="https://imgur.com/7w6q05z.jpg" width="75" height="75" />
+          <div>
+            <a href="#" class="related-link">Why Javascript is awesome</a>
+            <p class="related-author">By Maltida</p>
+          </div>
+        </li>
+      </ul>
     </aside>
+
     <footer id="Copyright">Copyright &copy; 2023 by The Code Magazine</footer>
-    
-    <button> Add to cart</button>
   </body>
 </html>
